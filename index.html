@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sports Sprite Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Sports Sprite Generator</h1>
+
+    <div class="controls">
+      <label>Seed (name or number)
+        <input id="seed" type="text" value="player1" />
+      </label>
+
+      <label>Team color
+        <input id="teamColor" type="color" value="#ff3b30" />
+      </label>
+
+      <label>Sport
+        <select id="sport">
+          <option value="soccer">Soccer</option>
+          <option value="basketball">Basketball</option>
+          <option value="baseball">Baseball</option>
+          <option value="tennis">Tennis</option>
+        </select>
+      </label>
+
+      <button id="generate">Generate</button>
+      <button id="download">Download PNG</button>
+    </div>
+
+    <div class="preview">
+      <div id="canvasWrap">
+        <canvas id="spriteCanvas" width="256" height="256"></canvas>
+        <div id="overlayIcon" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <p class="note">Built with DiceBear (free). Deploy as a static site on Render.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
